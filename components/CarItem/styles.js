@@ -17,6 +17,10 @@ const styles = StyleSheet.create({
     fontWeight: '600'
   },
 
+  subtitleCTA: {
+    textDecorationLine: 'underline',
+  },
+
   subtitle: {
     fontSize: 16,
     color: '#5c5e62'
@@ -29,6 +33,12 @@ const styles = StyleSheet.create({
     position: 'absolute'
 
   },
+
+  buttonsContainer: {
+    position: 'absolute',
+    bottom: 50,
+    width: '100%',
+  }
 });
 
 export default styles;
