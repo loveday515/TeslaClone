@@ -6,7 +6,7 @@ import styles from './styles';
 
 const CarItem = (props) => {
 
-    const {name, tagLine, tagLineCTA, image} = props;
+    const {name, tagline, taglineCTA, image} = props.car;
 
     return (
      <View style={styles.carContainer}>
@@ -19,9 +19,9 @@ const CarItem = (props) => {
         <View style={styles.titles}>
           <Text style={styles.title}>{name}</Text>
           <Text style={styles.subtitle}>
-            {tagLine}
+            {tagline}
             {' '}
-              <Text style={styles.subtitleCTA}>{tagLineCTA}</Text>
+              <Text style={styles.subtitleCTA}>{taglineCTA}</Text>
           </Text>
         </View>
 
@@ -38,7 +38,7 @@ const CarItem = (props) => {
            type='secondary' 
            content={'Existing Inventory'}
            onPress={ () => {
-             console.warn('Exixting Inventry was pressed')
+             console.warn('Existing Inventry was pressed')
           }}
         />
 
